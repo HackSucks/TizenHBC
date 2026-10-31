@@ -1,0 +1,5 @@
+/home/nvme/tizenhbc/dist/hbc-srv/hbc-srv
+/home/nvme/tizenhbc/dist/hbc-srv/hbc-srv.dll
+/home/nvme/tizenhbc/dist/hbc-srv/hbc-srv.deps.json
+/home/nvme/tizenhbc/dist/hbc-srv/hbc-srv.runtimeconfig.json
+/home/nvme/tizenhbc/dist/hbc-srv/hbc-srv.pdb

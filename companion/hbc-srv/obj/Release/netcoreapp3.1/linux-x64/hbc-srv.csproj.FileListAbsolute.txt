@@ -1,0 +1,13 @@
+/home/nvme/tizenhbc/companion/hbc-srv/bin/Release/netcoreapp3.1/linux-x64/hbc-srv
+/home/nvme/tizenhbc/companion/hbc-srv/bin/Release/netcoreapp3.1/linux-x64/hbc-srv.deps.json
+/home/nvme/tizenhbc/companion/hbc-srv/bin/Release/netcoreapp3.1/linux-x64/hbc-srv.runtimeconfig.json
+/home/nvme/tizenhbc/companion/hbc-srv/bin/Release/netcoreapp3.1/linux-x64/hbc-srv.runtimeconfig.dev.json
+/home/nvme/tizenhbc/companion/hbc-srv/bin/Release/netcoreapp3.1/linux-x64/hbc-srv.dll
+/home/nvme/tizenhbc/companion/hbc-srv/bin/Release/netcoreapp3.1/linux-x64/hbc-srv.pdb
+/home/nvme/tizenhbc/companion/hbc-srv/obj/Release/netcoreapp3.1/linux-x64/hbc-srv.GeneratedMSBuildEditorConfig.editorconfig
+/home/nvme/tizenhbc/companion/hbc-srv/obj/Release/netcoreapp3.1/linux-x64/hbc-srv.AssemblyInfoInputs.cache
+/home/nvme/tizenhbc/companion/hbc-srv/obj/Release/netcoreapp3.1/linux-x64/hbc-srv.AssemblyInfo.cs
+/home/nvme/tizenhbc/companion/hbc-srv/obj/Release/netcoreapp3.1/linux-x64/hbc-srv.csproj.CoreCompileInputs.cache
+/home/nvme/tizenhbc/companion/hbc-srv/obj/Release/netcoreapp3.1/linux-x64/hbc-srv.dll
+/home/nvme/tizenhbc/companion/hbc-srv/obj/Release/netcoreapp3.1/linux-x64/hbc-srv.pdb
+/home/nvme/tizenhbc/companion/hbc-srv/obj/Release/netcoreapp3.1/linux-x64/hbc-srv.genruntimeconfig.cache

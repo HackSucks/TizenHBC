@@ -1,0 +1,5 @@
+/tmp/opencode/hbc-srv-x64/hbc-srv
+/tmp/opencode/hbc-srv-x64/hbc-srv.dll
+/tmp/opencode/hbc-srv-x64/hbc-srv.deps.json
+/tmp/opencode/hbc-srv-x64/hbc-srv.runtimeconfig.json
+/tmp/opencode/hbc-srv-x64/hbc-srv.pdb

@@ -1,0 +1,13 @@
+/home/nvme/tizenhbc/companion/elf-run/bin/Release/netcoreapp3.1/linux-arm/elf-run
+/home/nvme/tizenhbc/companion/elf-run/bin/Release/netcoreapp3.1/linux-arm/elf-run.deps.json
+/home/nvme/tizenhbc/companion/elf-run/bin/Release/netcoreapp3.1/linux-arm/elf-run.runtimeconfig.json
+/home/nvme/tizenhbc/companion/elf-run/bin/Release/netcoreapp3.1/linux-arm/elf-run.runtimeconfig.dev.json
+/home/nvme/tizenhbc/companion/elf-run/bin/Release/netcoreapp3.1/linux-arm/elf-run.dll
+/home/nvme/tizenhbc/companion/elf-run/bin/Release/netcoreapp3.1/linux-arm/elf-run.pdb
+/home/nvme/tizenhbc/companion/elf-run/obj/Release/netcoreapp3.1/linux-arm/elf-run.GeneratedMSBuildEditorConfig.editorconfig
+/home/nvme/tizenhbc/companion/elf-run/obj/Release/netcoreapp3.1/linux-arm/elf-run.AssemblyInfoInputs.cache
+/home/nvme/tizenhbc/companion/elf-run/obj/Release/netcoreapp3.1/linux-arm/elf-run.AssemblyInfo.cs
+/home/nvme/tizenhbc/companion/elf-run/obj/Release/netcoreapp3.1/linux-arm/elf-run.csproj.CoreCompileInputs.cache
+/home/nvme/tizenhbc/companion/elf-run/obj/Release/netcoreapp3.1/linux-arm/elf-run.dll
+/home/nvme/tizenhbc/companion/elf-run/obj/Release/netcoreapp3.1/linux-arm/elf-run.pdb
+/home/nvme/tizenhbc/companion/elf-run/obj/Release/netcoreapp3.1/linux-arm/elf-run.genruntimeconfig.cache

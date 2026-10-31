@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#04121c">
+<title>Tizen Homebrew Channel</title>
+<link rel="stylesheet" href="vendor/xterm/xterm.css">
+<link rel="stylesheet" href="css/hbc.css">
+</head>
+<body>
+<div id="stage">
+  <div id="bg"></div>
+  <canvas id="bubbles"></canvas>
+
+  <!-- ── Intro (rising water, flash + logo, Exit / Start) ──────────────── -->
+  <div id="intro">
+    <canvas id="introWater"></canvas>
+    <div id="introCenter">
+      <div id="logoWrap">
+        <img id="introLogo" src="res/img/logo_intro.png" alt="the Tizen Homebrew Channel">
+      </div>
+    </div>
+    <div id="introButtons">
+      <div class="wiiBtn introBtn" id="btnExit" data-action="exit"><span>Exit</span></div>
+      <div class="wiiBtn introBtn focus" id="btnStart" data-action="start"><span>Start</span></div>
+    </div>
+    <div id="introCursorBox" class="cursorBox"><img id="introCursor" class="hand" src="res/img/cursor_pic.png" alt=""></div>
+    <div id="introHint">◀ ▶ Select &nbsp;·&nbsp; OK Start &nbsp;·&nbsp; BACK Exit</div>
+  </div>
+
+  <!-- ── Main channel ─────────────────────────────────────────────────── -->
+  <div id="main" class="hidden">
+    <div id="grid"></div>
+    <img id="mainLogo" src="res/img/logo.png" alt="the Tizen Homebrew Channel">
+    <div id="pageArrows">
+      <img id="arrowPrev" class="pageArrow" src="res/img/apps_previous.png" alt="">
+      <img id="arrowNext" class="pageArrow" src="res/img/apps_next.png" alt="">
+    </div>
+    <div id="status">
+      <div id="statusText"></div>
+      <img id="icoService" src="res/img/icon_usbgecko.png" alt="">
+      <img id="icoNet" src="res/img/icon_network.png" alt="">
+    </div>
+    <div id="cursorBox" class="cursorBox"><img id="cursor" class="hand" src="res/img/cursor_pic.png" alt=""></div>
+    <div id="toast"></div>
+  </div>
+
+  <!-- ── Program details / README ─────────────────────────────────────── -->
+  <div id="detail" class="overlay hidden">
+    <div class="panel detailPanel">
+      <div class="panelHead">
+        <img class="dlgIcon" src="res/img/dlg_info.png" alt="">
+        <div class="panelTitle" id="detailTitle">Program</div>
+      </div>
+      <div class="detailBody">
+        <div class="detailTop">
+          <div class="detailArt" id="detailArt"></div>
+          <div class="detailMeta">
+            <div class="detailName" id="detailName"></div>
+            <div class="detailAuthor" id="detailAuthor"></div>
+            <div class="badges" id="detailBadges"></div>
+            <div class="detailDesc" id="detailDesc"></div>
+          </div>
+        </div>
+        <div class="readme" id="detailReadme"></div>
+      </div>
+      <div class="panelButtons" id="detailButtons"></div>
+      <div class="panelFoot" id="detailHint"></div>
+    </div>
+  </div>
+
+  <!-- ── Home menu ────────────────────────────────────────────────────── -->
+  <div id="menu" class="overlay hidden">
+    <div class="panel menuPanel">
+      <div class="panelHead">
+        <img class="dlgIcon" src="res/img/dlg_info.png" alt="">
+        <div class="panelTitle">Homebrew Channel</div>
+      </div>
+      <div class="menuList" id="menuList"></div>
+      <div class="panelFoot" id="menuFoot">Arrows move · OK select · BACK close</div>
+    </div>
+  </div>
+
+  <!-- ── Settings ─────────────────────────────────────────────────────── -->
+  <div id="settings" class="overlay hidden">
+    <div class="panel settingsPanel">
+      <div class="panelHead">
+        <img class="dlgIcon" src="res/img/dlg_info.png" alt="">
+        <div class="panelTitle">Settings</div>
+      </div>
+      <div class="settingsList" id="settingsList"></div>
+      <div class="panelFoot">Arrows move · Left/Right change · OK edit · BACK save</div>
+    </div>
+  </div>
+
+  <!-- ── Program catalog ──────────────────────────────────────────────── -->
+  <div id="catalog" class="overlay hidden">
+    <div class="panel catalogPanel">
+      <div class="panelHead">
+        <img class="dlgIcon" src="res/img/dlg_info.png" alt="">
+        <div class="panelTitle">Programs</div>
+      </div>
+      <div class="catalogList" id="catalogList"></div>
+      <div class="panelFoot">Arrows move · OK details · BACK close</div>
+    </div>
+  </div>
+
+  <!-- ── Terminal ─────────────────────────────────────────────────────── -->
+  <div id="terminalLayer" class="hidden">
+    <div id="termHeader">
+      <div id="termTitle">Terminal</div>
+      <div id="termState">starting…</div>
+      <div id="termButtons">
+        <div class="miniBtn" id="btnKb">Keyboard</div>
+        <div class="miniBtn" id="btnHide">Hide</div>
+        <div class="miniBtn" id="btnKill">Kill</div>
+        <div class="miniBtn" id="btnClose">Close</div>
+      </div>
+    </div>
+    <div id="termWrap"><div id="terminal"></div></div>
+    <div id="termHint">BACK: close · Info/Menu: actions · Tools or Up after exit: header · F2/Green: keyboard</div>
+  </div>
+
+  <!-- ── Generic dialog ───────────────────────────────────────────────── -->
+  <div id="dialog" class="overlay hidden">
+    <div class="panel dialogPanel">
+      <div class="panelHead">
+        <img class="dlgIcon" id="dialogIcon" src="res/img/dlg_confirm.png" alt="">
+        <div class="panelTitle" id="dialogTitle">Confirm</div>
+      </div>
+      <div class="dialogText" id="dialogText"></div>
+      <div class="panelButtons" id="dialogButtons"></div>
+    </div>
+  </div>
+
+  <!-- ── Virtual keyboard ─────────────────────────────────────────────── -->
+  <div id="keyboard" class="hidden">
+    <div id="kbHead">
+      <span id="kbTitle">Virtual Keyboard</span>
+      <span id="kbValue"></span>
+      <span id="kbLayer"></span>
+    </div>
+    <div id="kbRows"></div>
+  </div>
+
+  <div id="fade"></div>
+</div>
+
+<script src="vendor/xterm/xterm.js"></script>
+<script src="vendor/xterm/xterm-addon-fit.js"></script>
+<script src="js/util.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/remote.js"></script>
+<script src="js/bridge.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/launcher.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/keyboard.js"></script>
+<script src="js/terminal.js"></script>
+<script src="js/intro.js"></script>
+<script src="js/main.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

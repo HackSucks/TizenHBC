@@ -1,0 +1,24 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1/linux-arm",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {},
+    ".NETCoreApp,Version=v3.1/linux-arm": {
+      "elf-run/1.0.0": {
+        "runtime": {
+          "elf-run.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "elf-run/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RuntimeIdentifier>linux-arm</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <!-- Match hbc-srv: the TV's runtime is whatever the firmware ships. -->
+    <RollForward>LatestMajor</RollForward>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <AssemblyName>elf-run</AssemblyName>
+    <Nullable>disable</Nullable>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+</Project>

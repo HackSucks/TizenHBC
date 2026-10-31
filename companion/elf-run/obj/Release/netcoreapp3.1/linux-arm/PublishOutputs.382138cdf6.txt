@@ -1,0 +1,5 @@
+/home/nvme/tizenhbc/dist/hbc-srv/elf-run/elf-run
+/home/nvme/tizenhbc/dist/hbc-srv/elf-run/elf-run.dll
+/home/nvme/tizenhbc/dist/hbc-srv/elf-run/elf-run.deps.json
+/home/nvme/tizenhbc/dist/hbc-srv/elf-run/elf-run.runtimeconfig.json
+/home/nvme/tizenhbc/dist/hbc-srv/elf-run/elf-run.pdb

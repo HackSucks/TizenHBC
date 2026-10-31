@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "dQJZY04d5tk=",
+  "success": true,
+  "projectFilePath": "/home/nvme/tizenhbc/companion/elf-run/elf-run.csproj",
+  "expectedPackageFiles": [
+    "/home/nvme/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "/home/nvme/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/home/nvme/.nuget/packages/microsoft.netcore.app.host.linux-arm/3.1.32/microsoft.netcore.app.host.linux-arm.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}
