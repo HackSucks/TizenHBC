@@ -86,6 +86,19 @@
     }
     term.open(host);
 
+    /* Stop the Samsung/Tizen IME from popping up whenever xterm's hidden
+       textarea takes focus. Key events still reach xterm; only the system
+       keyboard is suppressed. */
+    var ta = term.textarea || host.querySelector('.xterm-helper-textarea');
+    if (ta) {
+      ta.setAttribute('readonly', 'readonly');
+      ta.setAttribute('inputmode', 'none');
+      ta.setAttribute('autocomplete', 'off');
+      ta.setAttribute('autocorrect', 'off');
+      ta.setAttribute('autocapitalize', 'off');
+      ta.setAttribute('spellcheck', 'false');
+    }
+
     term.onData(function (data) {
       if (session && running) HBC.Bridge.input(session, data, function () {});
     });

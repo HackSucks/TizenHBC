@@ -61,6 +61,16 @@
     { label: 'Clear', kind: 'textclear', small: true }
   ];
 
+  var SHIFT_SYMBOLS = {
+    '1': '!', '2': '@', '3': '#', '4': '$', '5': '%', '6': '^', '7': '&', '8': '*', '9': '(', '0': ')',
+    '-': '_', '=': '+', '[': '{', ']': '}', '\\': '|', ';': ':', "'": '"', ',': '<', '.': '>', '/': '?', '`': '~'
+  };
+
+  function shiftChar(ch) {
+    if (/^[a-z]$/.test(ch)) return ch.toUpperCase();
+    return SHIFT_SYMBOLS.hasOwnProperty(ch) ? SHIFT_SYMBOLS[ch] : ch;
+  }
+
   function makeChar(label, code) {
     return { label: label, code: code, kind: 'char' };
   }
@@ -76,7 +86,7 @@
       lettersRow('1234567890'),
       [makeChar('-', '-'), makeChar('=', '='), makeChar('[', '['), makeChar(']', ']'),
        makeChar('\\', '\\'), makeChar(';', ';'), makeChar("'", "'"), makeChar(',', ','),
-       makeChar('.', '.'), makeChar('/', '/')],
+       makeChar('.', '.'), makeChar('/', '/'), makeChar(':', ':')],
       [makeChar('`', '`'), makeChar('~', '~'), makeChar('!', '!'), makeChar('@', '@'),
        makeChar('#', '#'), makeChar('$', '$'), makeChar('%', '%'), makeChar('^', '^'),
        makeChar('&', '&'), makeChar('*', '*'), makeChar('(', '('), makeChar(')', ')')],
@@ -122,9 +132,7 @@
   }
 
   function keyLabel(key) {
-    if (key.kind === 'char' && layer === 'letters' && shift && /[a-z]/.test(key.label)) {
-      return key.label.toUpperCase();
-    }
+    if (key.kind === 'char' && shift) return shiftChar(key.label);
     return key.label;
   }
 
@@ -295,8 +303,7 @@
     var kind = key.kind;
 
     if (kind === 'char') {
-      var ch = key.code;
-      if (layer === 'letters' && shift && /[a-z]/.test(ch)) ch = ch.toUpperCase();
+      var ch = shift ? shiftChar(key.code) : key.code;
       insertChar(ch);
       return;
     }

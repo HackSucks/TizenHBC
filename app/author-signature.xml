@@ -134,6 +134,11 @@ tB1UGwukBA==</DigestValue>
 </Reference>
 <Reference URI="js%2Fkeyboard.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>gXDzNJGH2burRJHsT3xCsqAOO69z46Xzto70fJuJOEOjsTaGGhx5wm0gkQ/RyWuG+56fPpkSaofL
+8pLe3NrGhg==</DigestValue>
+</Reference>
+<Reference URI="js%2Fkeyboard.js.bak">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
 <DigestValue>iNa0manoq6Xo92CJOLJGxzk4H7gQotuIjfRY4ghlJfi0PF0yspR7jkrznbSBPX3iqLcxhp8RAPCu
 LMbNyk86yA==</DigestValue>
 </Reference>
@@ -152,30 +157,20 @@ vWoAZ2ZYiA==</DigestValue>
 <DigestValue>Bxem6iHwpEsfiZtbwcu4mM+LWwe21zcZvOUtlNRxRrla3da7k2DHs5tuQ+KaQiPnvjIviijyMIX6
 +XGRTFtrEQ==</DigestValue>
 </Reference>
-<Reference URI="js%2Fremote.js.bak">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>SeNcKBOvDcTOT03WmVNwDqk80YlFXN1QKhSiNW1liej5BaFJREqP1NxUsFMZ1tkqQITds5q1ttEs
-6dRl0tXCsg==</DigestValue>
-</Reference>
 <Reference URI="js%2Fterminal.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>Bs+aVvjAInx0O9ZK8y/gJXXPOS3dC2uisoLnqO9R+TF/yOWimwodavymphDvGXfOJC8ssX9irXFk
-975E8meFcg==</DigestValue>
+<DigestValue>xJhpa1n/oLgyHPbSesfGKZ3vyJd/LRNbqRhsaMTePdjNTEWpnB0lS/VJIN5dFav0UcFKhz7gpO9H
+lMsZw/i3kg==</DigestValue>
 </Reference>
 <Reference URI="js%2Fterminal.js.bak">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>TytKUyUc4hXrspdzZ/2CzpLszP8IpDyeuClACM/ovuq18sU2GMzsUuu6UoBaMKOkFgxN1YkuGTkc
-+rBRQiwYMg==</DigestValue>
+<DigestValue>Bs+aVvjAInx0O9ZK8y/gJXXPOS3dC2uisoLnqO9R+TF/yOWimwodavymphDvGXfOJC8ssX9irXFk
+975E8meFcg==</DigestValue>
 </Reference>
 <Reference URI="js%2Fui.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
 <DigestValue>8bNcOh+s5Y09M/ZovowpjZ4v9pY16Qx+vZqps1iF1jgiVntB84fyblxuGdcCJyfZU5jL71VpHz/X
 RN+qxbdAzg==</DigestValue>
-</Reference>
-<Reference URI="js%2Fui.js.bak">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>HvmdvFor4dxOORWMjs05/a62/VAWkCehxRNgKc3wdTKfebav0GTYwFhlsqSPCmEM2BZS1ZkYX/Gs
-kok3fjtKTA==</DigestValue>
 </Reference>
 <Reference URI="js%2Futil.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -457,9 +452,9 @@ QY10fG1EWQ==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-gjdEOa511PtG+z4KSudl4onaeNGznG8n+X5Uyq/ousQpfDl/t0ZqxNatwW4VKXyF0iCL4osbbdDu
-A1g5m417jNhvxu4LYOAmdLRf3rXUn7AU/XPyY7IiLt/6h7KERHaF92paFJE7uBI5wkBm4Hl6FrOs
-FZ1FF2CNkgTlxOdIyxo=
+njXJCr6++d76EOVJatE4rMa16jMZQQEIk0QoSVB08uiTAps96foFaHnrWJmsZHKERIhQN3fILLwx
+3p3xJVBSmlFlqKhmox1QpBYNkPhiSsvbw+I/jkEi0PE4TMrdOWwL6oKMnUD2olySDlmiDTrZL0Te
+A1qXvPxuAqPtNv5hGDQ=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

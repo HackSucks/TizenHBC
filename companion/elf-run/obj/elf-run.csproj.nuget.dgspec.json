@@ -60,7 +60,7 @@
               "version": "[3.1.10, 3.1.10]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.linux-arm",
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
               "version": "[3.1.32, 3.1.32]"
             },
             {
@@ -77,7 +77,7 @@
         }
       },
       "runtimes": {
-        "linux-arm": {
+        "linux-x64": {
           "#import": []
         }
       }
